@@ -1,0 +1,247 @@
+
+.section_product {
+  padding: 60px 0 85px;
+}
+.category_head {
+  display: flex;
+  align-items: center;
+  &--btn {
+    padding-left: 65px;
+    width: 30%;
+  }
+ &--link {
+   background-color: $lightred;
+   padding: 10px;
+   height: 66px;
+   max-width: 335px;
+   font-size: 31px;
+   line-height: 31px;
+   font-weight: 700;
+   border-radius: 50px;
+   border: 2px solid $lightred;
+   &:hover {
+     color: $lightred;
+     background: transparent;
+   }
+ }
+  &--form {
+    width: 70%;
+    form {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: -30px;
+    }
+  }
+}
+.search_field {
+  height: 53px;
+  border: 1px solid #8a1302;
+  border-radius: 50px;
+  font-size: 19px;
+  padding: 15px 25px;
+  display: flex;
+  max-width: 455px;
+  align-items: center;
+  margin-left: 24px;
+  width: 100%;
+  position: relative;
+  input {
+    padding: 0;
+    width: 100%;
+    margin-left: 15px;
+    &::placeholder {
+      color: #8a1302;
+    }
+  }
+  &:last-child:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    border: 8px solid transparent;
+    border-left: 10px solid #8a1302;
+  }
+}
+.product_box {
+  margin: 105px -12px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product_item {
+  width: 14.28%;
+  padding: 0 12px;
+  &--inner {
+    position: relative;
+  }
+  &--link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  &--title {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(43, 62, 39, 0.9);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.section_green {
+  position: relative;
+  padding: 100px 0 85px;
+}
+
+.background_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section_build {
+  padding: 100px 0 70px;
+  position: relative;
+}
+.market_img {
+  width: 468px;
+  margin: 0 auto 30px;
+}
+.market_title {
+font-size: 55px;
+  margin-bottom: 20px;
+  line-height: 80px;
+  color: $orange;
+  text-align: center;
+}
+.market_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.market_content {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 -35px;
+  display: flex;
+  font-weight: 300;
+
+}
+.market_desc {
+  padding: 0 35px;
+  width: 50%;
+}
+.market_video {
+  max-width: 1335px;
+  margin: 110px auto 40px;
+  width: 100%;
+  iframe {
+    width: 100%;
+  }
+}
+.title_caption {
+  font-size: 60px;
+  line-height: 85px;
+  text-align: center;
+}
+.build_map {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+}
+.section_cat {
+background: #7b3820;
+  padding: 60px 0;
+}
+.category_wrapper {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+}
+.category_box {
+  display: flex;
+  margin: 0 -20px;
+  font-size: 20px;
+  line-height: 28px;
+}
+.category_item {
+  padding: 0 20px;
+  width: 25%;
+  &--list {
+    margin-bottom: 20px;
+    li {
+      margin-bottom: 5px;
+      &:first-child {
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: $yellow;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.section_gallery {
+  position: relative;
+  &--image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.gallery_content {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 61%;
+  background-color: $yellowText;
+  border: 7px solid $darkred;
+  padding: 80px 120px 160px;
+  text-align: center;
+}
+.gallery_title {
+  color: $darkred;
+  font-size: 60px;
+  line-height: 60px;
+  padding-bottom: 24px;
+  position: relative;
+  margin-bottom: 30px;
+  img {
+    display: block;
+    width: auto;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: 0;
+  }
+}
+.gallery_desc {
+  color: $darkGreen;
+  a {
+    color: $darkred;
+    text-decoration: underline;
+  }
+}
+
+.mapbox {
+  height: 468px;
+}

@@ -1,0 +1,385 @@
+@media (max-width: 1440px) {
+  .intro_inner {
+    &--desc {
+      font-size: 25px;
+      line-height: 32px;
+    }
+
+    &--container {
+      padding: 40px 20px 5vh;
+    }
+
+    &--textimage {
+      width: 30%;
+    }
+  }
+  .header_inner {
+    padding: 17px 40px 12px;
+    font-size: 22px;
+    line-height: 26px;
+    white-space: nowrap;
+    max-width: fit-content;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .category_head {
+    &--btn {
+      padding-left: 0;
+    }
+
+    &--form {
+      form {
+        margin-right: 0;
+      }
+    }
+  }
+  .product_box {
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .product_item {
+    width: 25%;
+    margin-bottom: 40px;
+
+    &:nth-child(1n + 5) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .gallery_content {
+    max-width: 75%;
+    padding: 40px;
+  }
+  .market_video iframe {
+    height: 600px;
+  }
+}
+
+@media (max-width: 960px) {
+  .burger_menu {
+    display: block;
+  }
+
+  .intro_inner {
+    height: 600px;
+
+    &--container {
+      padding: 20px 20px;
+    }
+
+    &--head {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &--social {
+      margin-left: auto;
+    }
+
+    &--logo {
+      width: 100px;
+    }
+
+    &--desc {
+      display: none;
+    }
+
+    &--image {
+      object-position: 30%;
+    }
+  }
+  .header_inner {
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    max-width: 100%;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 122;
+    transition: .3s all linear;
+    padding: 33px 20px 40px;
+    border-radius: 0;
+
+    &.active {
+      transform: translateX(0%);
+    }
+
+    ul {
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+
+      li {
+        padding-right: 0;
+        margin: 0 0 20px;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .close_menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .header_nav {
+    margin: auto;
+  }
+  .container {
+    padding: 0 25px;
+  }
+  .section_product {
+    padding: 30px 0 40px;
+  }
+  .category_head {
+    flex-direction: column;
+
+    &--btn {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+
+    &--link {
+      margin: 0 auto;
+      height: 57px;
+      max-width: 260px;
+      font-size: 24px;
+    }
+
+    &--form {
+      width: 100%;
+
+      form {
+        flex-direction: column;
+      }
+    }
+
+  }
+  .search_field {
+    width: 100%;
+    height: 36px;
+    margin: 0 auto 15px;
+    padding: 5px 15px;
+
+    input {
+      margin-left: 8px;
+      padding-top: 5px;
+      font-size: 20px;
+    }
+
+    &:last-child:after {
+      right: 10px;
+      top: 12px;
+      border: 5px solid transparent;
+      border-left: 7px solid #8a1302;
+    }
+  }
+  .product_box {
+    margin: 30px -6px 0;
+  }
+  .product_item {
+    width: 50%;
+    padding: 6px;
+    margin-bottom: 15px;
+
+    &:nth-child(1n + 5) {
+      display: none;
+    }
+
+    &--title {
+      height: 70px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .section_green {
+    padding: 60px 0 5px;
+  }
+  .market_img {
+    margin-bottom: 25px;
+  }
+  .market_title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    line-height: 48px;
+  }
+  .market_content {
+    flex-direction: column;
+    margin: 0;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .market_desc {
+    padding: 0;
+    width: 100%;
+  }
+  .market_video {
+    margin: 35px 0 20px;
+
+    iframe {
+      height: 350px;
+    }
+  }
+  .section_build {
+    padding: 7px 0 30px;
+    background: $darkGreen;
+
+    .background_image {
+      display: none;
+    }
+  }
+  .title_caption {
+    font-size: 39px;
+    line-height: 62px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .section_cat {
+    padding: 45px 0 75px;
+  }
+  .category_box {
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .category_item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 35px;
+
+    &:nth-child(1n + 3) {
+      margin-bottom: 0;
+    }
+  }
+  .section_gallery {
+    padding: 50px 25px;
+
+    &--image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  .gallery_content {
+    position: static;
+    transform: translate(0, 0);
+    padding: 15px 10px 30px;
+    max-width: 100%;
+  }
+  .gallery_title {
+    font-size: 39px;
+    line-height: 62px;
+    margin-bottom: 15px;
+
+  }
+  .mapbox {
+    height: 500px;
+  }
+  .footer {
+    padding: 50px 0 25px;
+  }
+  .footer_inner {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .footer_item {
+    width: 100%;
+    justify-content: center;
+
+    &:last-child {
+      margin-top: 50px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .footer_logo {
+    width: 110px;
+  }
+  .footer_location {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+  }
+  .copyright_text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .made_in {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 670px) {
+  .intro_inner {
+    &--social {
+      display: none;
+    }
+
+    &--logo {
+      width: 85px;
+    }
+
+    &--textimage {
+      display: none;
+    }
+  }
+  .market_img {
+    width: 100%;
+  }
+  .market_video {
+    iframe {
+      height: 180px;
+    }
+  }
+  .gallery_title {
+    font-size: 54px;
+    line-height: 68px;
+  }
+  .footer_item {
+    flex-direction: column;
+  }
+  .footer_logo {
+    width: 194px;
+    margin: 0 auto 15px;
+
+    img {
+      width: 194px;
+    }
+  }
+  .footer_location {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .footer_btn {
+    &--link {
+      height: 57px;
+      width: 270px;
+      max-width: 100%;
+      margin: 0 auto 35px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .intro_inner {
+    height: 100vh;
+  }
+}
